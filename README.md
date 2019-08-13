@@ -43,6 +43,8 @@ yarn install
 cd client
 yarn install
 
+# Note: graphql playground path is changed to http://localhost:5000/graphql
+
 ```
 
 Create a new '.env' file under your root folder, paste the following code into it and change the MONGO_URI to whatever your mongo instance will be, and SECRET_KEY to whatever the key you want
