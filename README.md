@@ -4,10 +4,12 @@ MERNG stands for MongoDB, Express, React, Node.js & GraphQL
 
 Disclaimer:
 This is full source codes(server/client) for a youtube tutorial. You may visit his youtube channel at 
+
 Server: <https://www.youtube.com/watch?v=YBydg_Ui02Q&list=PLMhAeHCz8S3_CTiWMQhL6YxX7vZ7z84Zo>
+
 Client: <https://www.youtube.com/watch?v=_DqPiZPKkgY&list=PLMhAeHCz8S3_pgb-j51QnCEhXNj5oyl8n>
 
-If you found his tutorial useful, please support him by become his patreon
+If you found this tutorial useful, please consider to support him by becoming his patreon
 <https://www.patreon.com/classsed>
 
 I have made some modifications in order to post
