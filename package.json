@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "serve": "node index.js",
-    "start": "nodemon index.js --ignore './client/'",
-    "heroku-postbuild": "cd client && yarn && yarn run build"
+    "start": "node index.js",
+    "serve": "nodemon index.js --ignore './client/'",
+    "heroku-postbuild": "cd client && yarn && yarn run build && cp -rf public"
   },
   "dependencies": {
     "apollo-server": "^2.8.1",
