@@ -2,6 +2,19 @@
 
 MERNG stands for MongoDB, Express, React, Node.js & GraphQL
 
+Disclaimer:
+This is full source codes(server/client) for a youtube tutorial. You may visit his youtube channel at 
+Server: <https://www.youtube.com/watch?v=YBydg_Ui02Q&list=PLMhAeHCz8S3_CTiWMQhL6YxX7vZ7z84Zo>
+Client: <https://www.youtube.com/watch?v=_DqPiZPKkgY&list=PLMhAeHCz8S3_pgb-j51QnCEhXNj5oyl8n>
+
+If you found his tutorial useful, please support him by become his patreon
+<https://www.patreon.com/classsed>
+
+I have made some modifications in order to post
+- Turn config.js into using dotenv package
+- Use apollo-server-express instead of apollo-server to serve static files from client
+- Some variable names which don't affect any functionalities
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
