@@ -1,5 +1,11 @@
-const { ApolloServer, PubSub } = require('apollo-server');
+const {
+  ApolloServer,
+  PubSub,
+  graphiqlExpress
+} = require('apollo-server-express');
 const mongoose = require('mongoose');
+const express = require('express');
+const path = require('path');
 
 const typeDefs = require('./graphql/typeDefs');
 const resolvers = require('./graphql/resolvers');
@@ -13,12 +19,23 @@ const server = new ApolloServer({
   context: ({ req }) => ({ req, pubsub })
 });
 
+const app = express();
+
+app.use(express.static(path.join(__dirname, 'client/build')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/client/build/index.html'));
+});
+
+server.applyMiddleware({ app, path: '/graphql' });
+
+const port = process.env.PORT || 5000;
+
 mongoose
   .connect(MONGO_URI || process.env.MONGO_URI, { useNewUrlParser: true })
   .then(() => {
     console.log('MongoDB connected');
-    return server.listen({ port: 5000 });
-  })
-  .then(res => {
-    console.log(`Server running at ${res.url}`);
+    return app.listen({ port }, () => {
+      console.log(`Server running at ${port}`);
+    });
   });
