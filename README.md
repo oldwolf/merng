@@ -15,6 +15,7 @@ If you found his tutorial useful, please consider to support him by becoming pat
 I have made some modifications in order to deploy to heroku
 - Turn config.js into using dotenv file
 - Use apollo-server-express instead of apollo-server to serve static files from client
+- Change the graphql path from / to /graphql 
 - Modify some variable and file names which don't affect any functionalities
 
 ## Getting Started
