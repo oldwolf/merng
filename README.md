@@ -2,20 +2,20 @@
 
 MERNG stands for MongoDB, Express, React, Node.js & GraphQL
 
-Disclaimer:
-This is full source codes(server/client) for a youtube tutorial. You may visit his youtube channel at 
+#### Disclaimer:
+This is the full source codes(server/client) from a youtube tutorial. You may visit his youtube channel at 
 
 Server: <https://www.youtube.com/watch?v=YBydg_Ui02Q&list=PLMhAeHCz8S3_CTiWMQhL6YxX7vZ7z84Zo>
 
 Client: <https://www.youtube.com/watch?v=_DqPiZPKkgY&list=PLMhAeHCz8S3_pgb-j51QnCEhXNj5oyl8n>
 
-If you found this tutorial useful, please consider to support him by becoming his patreon
+If you found his tutorial useful, please consider to support him by becoming patreon at
 <https://www.patreon.com/classsed>
 
-I have made some modifications in order to post
-- Turn config.js into using dotenv package
+I have made some modifications in order to deploy to heroku
+- Turn config.js into using dotenv file
 - Use apollo-server-express instead of apollo-server to serve static files from client
-- Some variable names which don't affect any functionalities
+- Modify some variable and file names which don't affect any functionalities
 
 ## Getting Started
 
@@ -23,7 +23,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Make sure you have all requirements installed
+Make sure you have all the requirements installed
 
 ```
 - A MLab, Mongo Atlas or local Mongo instance is required
@@ -44,7 +44,7 @@ yarn install
 
 ```
 
-Create a new '.env' under your root folder, paste the following code into it and change the MONGO_URI to whatever your mongo instance will be, and SECRET_KEY to whatever the key you want
+Create a new '.env' file under your root folder, paste the following code into it and change the MONGO_URI to whatever your mongo instance will be, and SECRET_KEY to whatever the key you want
 
 ```
 MONGO_URI='mongodb://db_username:db_password@db_url:db_port/db_name'
@@ -55,7 +55,7 @@ PORT=5000
 ### Up and Running
 ```
 # Open a terminal, at the root folder
-yarn start
+yarn serve
 
 # Open another terminal
 cd client
