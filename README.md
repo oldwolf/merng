@@ -1,13 +1,13 @@
 # Social App - MERNG Stack
 
-MERNG stands for MongoDB, Express, React, Node.js & GraphQL
+MERNG stands for MongoDB, Express, React, Node.js & GraphQL. This is a simple social app which user may comment or like on other users post.
+[Demo Site](https://mysterious-thicket-27635.herokuapp.com/)
 
 #### Disclaimer:
-This is the full source codes(server/client) from a youtube tutorial. You may visit his youtube channel at 
+Full source codes(server/client) from a youtube tutorial, which you may visit his youtube channel at 
 
-Server: <https://www.youtube.com/watch?v=YBydg_Ui02Q&list=PLMhAeHCz8S3_CTiWMQhL6YxX7vZ7z84Zo>
-
-Client: <https://www.youtube.com/watch?v=_DqPiZPKkgY&list=PLMhAeHCz8S3_pgb-j51QnCEhXNj5oyl8n>
+[Server](https://www.youtube.com/watch?v=YBydg_Ui02Q&list=PLMhAeHCz8S3_CTiWMQhL6YxX7vZ7z84Zo) | 
+[Client](https://www.youtube.com/watch?v=_DqPiZPKkgY&list=PLMhAeHCz8S3_pgb-j51QnCEhXNj5oyl8n)
 
 If you found his tutorial useful, please consider to support him by becoming patreon at
 <https://www.patreon.com/classsed>
