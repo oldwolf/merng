@@ -58,7 +58,7 @@ PORT=5000
 ### Up and Running
 ```
 # Open a terminal, at the root folder
-yarn serve
+yarn start:dev
 
 # Open another terminal
 cd client
